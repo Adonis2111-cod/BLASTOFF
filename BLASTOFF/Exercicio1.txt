@@ -1,0 +1,31 @@
+using System;
+
+namespace Exercicio_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             int I, J, K, X, Y, media;
+
+            Console.WriteLine("Digite a primeira idade:");
+            I = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite a segunda idade:");
+            J = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite a terceira idade:");
+            K = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite a quarta idade:");
+            X = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Digite a quinta idade:");
+            Y = Convert.ToInt32(Console.ReadLine());
+
+            media = (I + J + K + X + Y)/5;
+
+            Console.WriteLine("A média das idades é: " + media);
+        }
+    }
+}

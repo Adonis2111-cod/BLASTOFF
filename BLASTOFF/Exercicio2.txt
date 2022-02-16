@@ -1,0 +1,22 @@
+using System;
+
+namespace Exercicio_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             float distancia, gasolina, consumo;
+
+            Console.WriteLine("Qual a distancia percorrida?(em Km):");
+            distancia = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Quanto foi gasto de combustível?(em litros):");
+            gasolina = Convert.ToInt32(Console.ReadLine());
+
+            consumo = gasolina / distancia;
+
+            Console.WriteLine("O consumo médio de gasolina é: " + consumo + " litros por Km rodado");
+        }
+    }
+}

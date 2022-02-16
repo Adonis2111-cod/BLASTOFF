@@ -1,0 +1,23 @@
+using System;
+
+namespace Exercicio_9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+              double numero, fatorial;
+
+            Console.Write("Informe um número: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+
+            fatorial = numero;
+            for(double i = numero - 1; i  > 1; i--)
+            {
+                fatorial = fatorial * i;
+            }
+
+            Console.WriteLine($"Fatorial de {numero} é {fatorial} ");
+        }
+    }
+}

@@ -1,0 +1,35 @@
+using System;
+
+namespace Exercicio_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+              int horaInicial, horaFinal, minutoInicial, minutoFinal;
+
+            Console.WriteLine("Qual a hora que começou o jogo?(apenas a hora, sem os minutos):");
+            horaInicial = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("e quantos minutos?:");
+            minutoInicial = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Qual a hora que terminou o jogo?(apenas a hora, sem os minutos):");
+            horaFinal = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("e quantos minutos?:");
+            minutoFinal = Convert.ToInt32(Console.ReadLine());
+
+            //Subtrair 2h45min de 3h15min
+
+            TimeSpan horaIni = new TimeSpan(horaInicial, minutoInicial, 0);
+
+            TimeSpan horaFim = new TimeSpan(horaFinal, minutoFinal, 0);
+
+            //Mostrar o resultado no prompt
+
+            Console.WriteLine("O jogo acabou às: " + horaFim.Subtract(horaIni).ToString() + " horas");
+            }
+        }
+    }
+}

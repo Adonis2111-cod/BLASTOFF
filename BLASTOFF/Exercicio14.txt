@@ -1,0 +1,33 @@
+using System;
+
+namespace Exercicio_12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+               string palavra;
+
+            Console.Write("Informe uma palavra:");
+            palavra = Console.ReadLine();
+
+            string firstHalf = palavra.Substring(0, palavra.Length / 2);
+            char[] arr = palavra.ToCharArray();
+
+            Array.Reverse(arr);
+
+            string temp = new string(arr);
+            string secondHalf = temp.Substring(0, temp.Length / 2);
+
+           
+            if(firstHalf == secondHalf)
+            {
+                Console.WriteLine("É uma palavra palíndromo");
+            }
+            else
+            {
+                Console.WriteLine("Não é uma palavra palíndromo");
+            }
+        }
+    }
+}

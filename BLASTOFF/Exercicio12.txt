@@ -1,0 +1,20 @@
+using System;
+
+namespace Exercicio_12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+               int[] A = { 1, 2, 3, 4 };
+            int[] B = { 1, 2, 5, 8 };
+
+            int[] resposta = A.Concat(B).ToArray();
+
+            for(int i = 0; i < resposta.Length; i++)
+            {
+                Console.WriteLine(resposta[i]);
+            }
+        }
+    }
+}

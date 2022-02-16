@@ -1,0 +1,19 @@
+using System;
+
+namespace Exercicio_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             double C, F;
+
+            Console.WriteLine("Qual a temperatura C?:");
+            C = Convert.ToDouble(Console.ReadLine());
+
+            F = (C + (5/9 * 32)) / (5 / 9);
+
+            Console.WriteLine("A temperatura F é: " + F);
+        }
+    }
+}
